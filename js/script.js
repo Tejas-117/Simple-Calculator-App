@@ -20,6 +20,7 @@ button.addEventListener('click', (e) => {
 
       if(theme!=1){// remove the color for other themes applied above;
          topSection.style.color = '';
+         outputScreen.style.color = '';
       }
 
 
