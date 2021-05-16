@@ -1,0 +1,208 @@
+.theme1{
+    /* ### Theme 1 */
+   /* #### Backgrounds */
+   --mainBG : hsl(222, 26%, 31%);/*(main background)*/
+   --toggleBG : hsl(223, 31%, 20%);/*(toggle background, keypad background)*/
+   --screenBG : hsl(224, 36%, 15%);/*(screen background)*/
+
+   /* #### Keys */
+   /* there are three types of button and have their respective backgrounds */
+   --key1 : hsl(225, 21%, 49%);/*(key background)*/
+   --keyShadow1 : hsl(224, 28%, 35%);/*(key shadow)*/
+
+   --key2 : hsl(6, 63%, 50%);/*(key background, toggle)*/
+   --keyShadow2 : hsl(6, 70%, 34%);/*(key shadow)*/
+
+   --key : hsl(30, 25%, 89%);/*(key background)*/
+   --keyShadow : hsl(28, 16%, 65%);/*(key shadow)*/
+
+   /* #### Text */
+   --text1: hsl(221, 14%, 31%);
+   --text2: white;
+}
+.theme2{
+   /* ### Theme 2 */
+   /* #### Backgrounds */
+   --mainBG : hsl(0, 0%, 90%);/*(main background)*/
+   --toggleBG : hsl(0, 5%, 81%);/*(toggle background, keypad background)*/
+   --screenBG : hsl(0, 0%, 93%);/*(screen background)*/
+
+   /* #### Keys */
+   --key1: hsl(185, 42%, 37%); /*(key background)*/
+   --keyShadow1 : hsl(185, 58%, 25%);/*(key shadow)*/
+
+   --key2 : hsl(25, 98%, 40%);/*(key background, toggle)*/
+   --keyShadow2 : hsl(25, 99%, 27%);/*(key shadow)*/
+
+   --key : hsl(45, 7%, 89%);/*(key background)*/
+   --keyShadow : hsl(35, 11%, 61%);/*(key shadow)*/
+
+   /* #### Text */
+   --text1: hsl(60, 10%, 19%);
+   --text2: white;/* (text)*/
+}
+.theme3{
+   /* ### Theme 3 */
+   /* #### Backgrounds */
+   --mainBG : hsl(268, 75%, 9%);/*(main background)*/
+   --toggleBG : hsl(268, 71%, 12%);/*(toggle background, keypad background)*/
+   --screenBG : hsl(268, 71%, 12%);/*(screen background)*/
+
+   /* #### Keys */
+   --key1 : hsl(281, 89%, 26%);/*(key background)*/
+   --keyShadow1: hsl(285, 91%, 52%);/*(key shadow)*/
+
+   --key2 : hsl(176, 100%, 44%);/*(key background, toggle)*/
+   --keyShadow2 : hsl(177, 92%, 70%);/*(key shadow)*/
+
+   --key : hsl(268, 47%, 21%);/*(key background)*/
+   --keyShadow : hsl(290, 70%, 36%);/*(key shadow)*/
+
+   /* #### Text */
+   /* --VeryDarkBlue: hsl(198, 20%, 13%); */
+   --text1: hsl(52, 100%, 62%);
+   --text2: white;/*(text)*/
+}
+html{
+   font-size: 32px;
+}
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   height: 100vh;
+   background-color: var(--mainBG);
+   font-family: 'Spartan', sans-serif;
+   overflow: hidden;
+}
+
+/* styled for theme 01 */
+#btn{
+   width: 60px;
+   height: 22px;
+   background-color: var(--toggleBG);
+   border-radius: 10px;
+   position: relative;
+}
+.toggle{
+   position: relative;
+   width: 16px;
+   height: 16px;
+   background-color: var(--key2);
+   border-radius: 50%;
+   top: 12%;
+   margin: 0 3px;
+}
+
+/* for tablets */
+main{
+   max-width: 50%;
+   margin: 8vh auto;
+}
+.top{
+   color: var(--text1); 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+.btn-part{
+   position: relative;
+}
+.btn-part pre{
+   font-family: inherit;
+   font-size: 0.4rem;
+   position: absolute;
+   bottom: 100%;
+}
+.btn-part span{
+   display: inline-block;
+   position: absolute;
+   right: 100%;
+   font-size: 0.4rem;
+   margin-right: 0.5rem;
+}
+
+.screen{
+   max-width: 100%;
+   height: 12vh;
+   color: var(--text1);
+   background-color: var(--screenBG);
+   border-radius: 10px;
+   margin: 0.7rem 0;
+   padding: 0.4rem 5px;
+   position: relative;
+   overflow: auto;
+}
+.output{
+   position: absolute;
+   right: 0.5rem;
+   top: 1rem;
+   max-width: 100%;
+}
+
+.keypad{
+   width: 100%;
+   background-color: var(--toggleBG);
+   border-radius: 10px;
+   padding: 0.4rem 0 ;   
+}
+.rows{
+   display: flex;
+   justify-content: space-evenly;
+   margin: 0.7rem 0;
+}
+.key{
+   border: none;
+   border-radius: 10px;
+   outline: none;
+   width: 8vw;
+   height: 50px;
+   font-family: inherit;
+   color: var(--text1);
+   background-color: var(--key);
+   border-bottom: 4px solid var(--keyShadow);
+   font-size: 0.5rem;
+}
+.key:active{
+   transform: translateY(4px);
+   border-bottom: none;
+}
+.key:focus{
+   outline: 2px solid;
+}
+.row5 .key{
+   width: 40%;
+}
+.key1{
+   color: var(--text2);
+   background-color: var(--key1);
+   border-bottom: 3px solid var(--keyShadow1);
+}
+.key2{
+   color: var(--text2);
+   background-color: var(--key2);
+   border-bottom: 3px solid var(--keyShadow2);
+}
+
+/* for mobiles */
+@media only screen and (max-width: 650px){
+   main{
+      max-width: 90%;
+   }
+   .key{
+      width: 15vw;
+   }
+}
+/* for desktops */
+@media only screen and (min-width: 1150px) {
+   main{
+      max-width: 30%;
+   }
+   .key{
+      width: 6vw;
+   }
+   .row5 .key{
+      width: 43%;
+   }
+}
