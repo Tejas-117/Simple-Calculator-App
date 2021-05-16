@@ -8,7 +8,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
   - [The challenge](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with))
+  - [Built with](#built-with)
 - [Author](#author)
 
 ## Overview
@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://github.com/Tejas-117/Simple-Calculator-App)
+- [Live Site URL](https://tejas-117.github.io/Simple-Calculator-App/)
 
 ## My process
 
@@ -45,5 +45,5 @@ If I get a better a way to change 'themes', it will be surely updated..
 
 ## Author
 
-- Website - [Tejas](https://www.your-site.com)
-- Frontend Mentor - [@Tejas-117](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Tejas](https://github.com/Tejas-117)
+- Frontend Mentor - [@Tejas-117](https://www.frontendmentor.io/profile/Tejas-117)
