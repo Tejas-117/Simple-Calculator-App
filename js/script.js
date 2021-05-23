@@ -4,31 +4,15 @@ const toggle = document.querySelector('.toggle');
 
 const bodyClass = document.body.classList;// to toggle between themes using different classes;
 
-   // few fixes for theme one ('color' issue);
-   const topSection = document.querySelector('.top');
-   const outputScreen = document.querySelector('.screen')
-   function topColor(){
-      topSection.style.color = 'white';
-      outputScreen.style.color = 'white';
-   }
-   topColor();
-
 
 let theme = 1, margLeft = 3;// default values of the two;
 button.addEventListener('click', (e) => { 
       theme += 1; 
 
-      if(theme!=1){// remove the color for other themes applied above;
-         topSection.style.color = '';
-         outputScreen.style.color = '';
-      }
-
-
       if(theme>3){// reset all the default values;
          theme=1;
          margLeft = 3;
          bodyClass.remove('theme2', 'theme3');
-         topColor();
       }
       else if(theme<=3){
          margLeft += 17;
